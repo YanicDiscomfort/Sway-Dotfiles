@@ -9,20 +9,20 @@ yay=( go )
 shenaniganz=( sl uwufetch viu )
 
 
-#sudo pacman -Syyu
+sudo pacman -Syyu
 sudo pacman -S ${base[@]} ${desktop[@]} ${applications[@]} ${fonts[@]} ${flatpak[@]} ${yay[@]} ${shenaniganz[@]}
 
-3sudo chsh -s /bin/zsh $USER
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo chsh -s /bin/zsh $USER
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-#cd ~
-#git clone https://aur.archlinux.org/yay.git
-#cd yay
-#makepkg -si
-#cd ~
-#rm -rf yay
+cd ~
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ~
+rm -rf yay
 
-#sudo systemctl enable ly bluetooth
+sudo systemctl enable ly bluetooth
 
 
-#reboot
+reboot
