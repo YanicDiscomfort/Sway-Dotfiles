@@ -10,7 +10,13 @@ shenaniganz=( sl uwufetch viu )
 
 
 sudo pacman -Syyu
-sudo pacman -S ${base[@]} ${desktop[@]} ${applications[@]} ${fonts[@]} ${flatpak[@]} ${yay[@]} ${shenaniganz[@]}
+sudo pacman -S ${base[@]}
+sudo pacman -S ${desktop[@]}
+sudo pacman -S ${applications[@]}
+sudo pacman -S ${fonts[@]}
+sudo pacman -S ${flatpak[@]}
+sudo pacman -S ${yay[@]}
+sudo pacman -S ${shenaniganz[@]}
 
 sudo chsh -s /bin/zsh $USER
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
